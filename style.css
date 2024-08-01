@@ -322,18 +322,22 @@ body {
 
 .bmi-text {
   flex: 1;
-  padding-right: 20px;
-   word-break: break-all;
+ 
 }
 
 .bmi-text h2 {
+  font-size: 40px;
   color: var(--color-blue);
-  margin-bottom: 20px;
+
 }
 .bmi-text p {
   font-size: 14px;
+  line-height: 1.4rem;
+  font-weight: 700;
   color: #333;
   margin: 10px 0;
+  padding-right: 24%;
+  word-break: break-all;
 }
 
 .bmi-text form {
@@ -355,8 +359,8 @@ body {
 }
 
 .bmi-image h3 {
-  color: var(--color-blue);
-  margin-bottom: 20px;
+  color: var(--color-gray);
+  
 }
 
 .bmi-image img {
