@@ -1,0 +1,127 @@
+
+/*
+:root {
+    --renk1: black;
+    /* Kırmızı 
+    --renk2: #585858;
+    /* gri 
+    --renk3: #355592;
+    /* Mavi 
+    --renk4: #f39c11;
+    /* Sarı 
+    --renk5: white;
+    --renk6: #f1f8ff;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo img {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFC017;
+}
+
+.join-btn {
+    background-color: #FFC017;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+    background-color: #ffb400;
+}
+
+.hero-section {
+    height: 70vh;
+    background: url("/Images/hero-man.jpg") no-repeat center center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons .btn {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #6c757d;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #495057;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #5a6268;
+}
