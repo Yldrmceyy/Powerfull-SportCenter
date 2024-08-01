@@ -19,6 +19,8 @@ body {
   color: #333;
 }
 
+/************************navbar***********************/
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -72,11 +74,10 @@ body {
 }
 
 .join-btn:hover {
-  background-color: var(
-    --color-blue
-  ); 
+  background-color: var(--color-blue);
 }
 
+/************************hero-section***********************/
 .hero-section {
   height: 90vh;
   background: url("/Images/hero-man.jpg") no-repeat center center/cover;
@@ -166,4 +167,41 @@ body {
 
 .hero-buttons .btn-secondary:hover {
   background-color: var(--color-yellow);
+}
+
+/************************info-section***********************/
+
+.info-section {
+  
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16%;
+ 
+}
+
+.info-section .box {
+  display: flex;
+  flex-direction: column; /* Elemanları dikey hizalar */
+  align-items: center; /* Merkezde hizalar */
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  width:250px;
+  height: 150px;
+  margin: 30px 30px;
+  text-align: center;
+}
+
+.box p {
+  font-size: 1.4rem;
+  font-weight:bolder;
+  margin: 0;
+  color: var(--color-blue);
+}
+.box span {
+  font-size: 1.2rem;
+  font-weight:bolder;
+  color: var(--color-black);
 }
