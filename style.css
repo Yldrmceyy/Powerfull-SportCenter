@@ -1,158 +1,169 @@
 :root {
-    --color-black: black;
-    --color-gray: #585858;
-    --color-blue: #355592;
-    --color-yellow: #f39c11;
-    --color-white: white;
-    --color-light-blue: #f1f8ff;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  body {
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    background: var(--color-blue); /* Navbar arka plan rengi */
-  }
-  
-  .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .brand-logo img {
-    width: 250px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center; /* Align items to the center vertically */
-    margin-right: 18%;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    color: var(--color-white);
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: var(--color-yellow);
-  }
-  
-  .join-btn {
-    background-color: var(--color-yellow);
-    color: var(--color-white);
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .join-btn:hover {
-    background-color: #e0a800; /* Hover rengi için daha açık bir sarı tonu */
-  }
-  
-  .hero-section {
-    height: 100vh;
-    background: url("/Images/hero-man.jpg") no-repeat center center/cover;
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    flex-direction: column;
-  }
-  
-  .hero-content {
-    width: 100%;
-    max-width: 1200px;
+  --color-black: black;
+  --color-gray: #585858;
+  --color-blue: #355592;
+  --color-yellow: #f39c11;
+  --color-white: white;
+  --color-light-blue: #f1f8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.2;
+  color: #333;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /*background: var(--color-blue); /* Navbar arka plan rengi */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo img {
+  width: 250px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; /* Align items to the center vertically */
+  margin-right: 18%;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-yellow);
+}
+
+.join-btn {
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.join-btn:hover {
+  background-color: var(
+    --color-blue
+  ); 
+}
+
+.hero-section {
+  height: 90vh;
+  background: url("/Images/hero-man.jpg") no-repeat center center/cover;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items:flex-start; /* Merkezde hizala */
-  justify-content:flex-start; /* İçerikleri dikeyde ortalar */
-  text-align:start; 
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: start;
+}
 
-  }
-  
-  .hero-btn {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .hero-btn:hover {
-    background-color: #2b4580;
-  }
-  
-  .main-head {
-    margin-bottom: 20px; /* Başlık ile içerik arasındaki boşluk */
-  }
-  
-  .hero-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-section p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    max-width: 600px;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center; /* Butonları ortalar */
-  }
-  
-  .hero-buttons .btn {
-    background-color: #343a40;
-    color: var(--color-white);
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .hero-buttons .btn-secondary {
-    background-color: #6c757d;
-  }
-  
-  .hero-buttons .btn:hover {
-    background-color: #495057;
-  }
-  
-  .hero-buttons .btn-secondary:hover {
-    background-color: #5a6268;
-  }
-  
+.hero-btn {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: larger;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #2b4580;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  max-width: 2000px;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: center; /* Butonları ortalar */
+}
+
+.hero-buttons .btn {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: transparent; /* Butonun iç kısmı şeffaf */
+  border: 1px solid #ffffff; /* Kenar çizgisi rengi ve kalınlığı */
+  color: var(--color-white); /* Metin rengi */
+  padding: 10px 20px; /* İç boşluk */
+  text-decoration: none; /* Alt çizgi yok */
+  font-size: 1.5rem; /* Yazı boyutu */
+  font-weight: 600; /* Yazı kalınlığı */
+  border-radius: 5px; /* Kenar köşe yuvarlaklığı */
+  transition: background-color 0.3s; /* Arka plan rengi değişim süresi */
+}
+
+.hero-buttons .btn:hover {
+  background-color: var(--color-yellow);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: var(--color-yellow);
+}
