@@ -2,7 +2,8 @@
   --color-black: black;
   --color-gray: #585858;
   --color-blue: #355592;
-  --color-yellow: #f39c11;
+  --color-yellow: #FFC017;
+  --color-orange:#f39c11;
   --color-white: white;
   --color-light-blue: #f1f8ff;
 }
@@ -62,11 +63,11 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--color-yellow);
+  color: var(--color-orange);
 }
 
 .join-btn {
-  background-color: var(--color-yellow);
+  background-color: var(--color-orange);
   color: var(--color-white);
   padding: 5px 10px;
   border-radius: 5px;
@@ -162,11 +163,11 @@ body {
 }
 
 .hero-buttons .btn:hover {
-  background-color: var(--color-yellow);
+  background-color: var(--color-orange);
 }
 
 .hero-buttons .btn-secondary:hover {
-  background-color: var(--color-yellow);
+  background-color: var(--color-orange);
 }
 
 /************************info-section***********************/
@@ -222,7 +223,7 @@ body {
   position: relative;
 }
 .our-classes p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--color-gray);
   margin: 0;
@@ -239,4 +240,28 @@ body {
   bottom: -15px; 
   left: 50%;
   transform: translateX(-50%);
+}
+
+.button-our-classes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+.button-our-classes .btn{
+  background-color: var(--color-blue);
+  display: flex;
+  border-radius: 4px;
+  border:none;
+  color: var(--color-white);
+  padding:5px 20px;
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+.btn:hover {
+  background-color: #FFC017;
+  cursor: pointer;
 }
