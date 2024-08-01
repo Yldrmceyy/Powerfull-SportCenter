@@ -150,15 +150,15 @@ body {
 }
 
 .hero-buttons .btn-secondary {
-  background-color: transparent; 
-  border: 1px solid #ffffff; 
-  color: var(--color-white); 
-  padding: 10px 20px; 
-  text-decoration: none; 
-  font-size: 1.5rem; 
-  font-weight: 600; 
-  border-radius: 5px; 
-  transition: background-color 0.3s; 
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: var(--color-white);
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .hero-buttons .btn:hover {
@@ -172,13 +172,11 @@ body {
 /************************info-section***********************/
 
 .info-section {
-  
   background-color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 16%;
- 
 }
 
 .info-section .box {
@@ -188,7 +186,7 @@ body {
   justify-content: center;
   background-color: white;
   border-radius: 5px;
-  width:250px;
+  width: 250px;
   height: 150px;
   margin: 30px 30px;
   text-align: center;
@@ -196,12 +194,47 @@ body {
 
 .box p {
   font-size: 1.4rem;
-  font-weight:bolder;
+  font-weight: bolder;
   margin: 0;
   color: var(--color-blue);
 }
 .box span {
   font-size: 1.2rem;
-  font-weight:bolder;
+  font-weight: bolder;
   color: var(--color-black);
+}
+
+/************************Our-Classes-section***********************/
+
+.our-classes {
+  text-align: center;
+  background-color: #f6f6f6;
+  height: max-content;
+  padding: 40px 0;
+  position: relative;
+  background:linear-gradient(-105deg, rgb(246,246,246) 58%, white 45%);
+}
+.our-classes h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+.our-classes p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--color-gray);
+  margin: 0;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.our-classes h2::after {
+  content: " ";
+  width: 100px;
+  height: 6px;
+  background-color: #FFC017;
+  position: absolute;
+  border-radius: 20px;
+  bottom: -15px; 
+  left: 50%;
+  transform: translateX(-50%);
 }
