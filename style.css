@@ -5,76 +5,77 @@
     --color-yellow: #f39c11;
     --color-white: white;
     --color-light-blue: #f1f8ff;
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
     line-height: 1.6;
     color: #333;
-}
-
-.navbar {
-    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .navbar {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    padding: 10px 0;
-}
-
-.container {
-    width: 85%;
+    background: var(--color-blue); /* Navbar arka plan rengi */
+  }
+  
+  .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.brand-logo img {
-    width: 150px;
-}
-
-.nav-links {
+  }
+  
+  .brand-logo img {
+    width: 250px;
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
-    align-items: center;
-}
-
-.nav-links li {
+    align-items: center; /* Align items to the center vertically */
+    margin-right: 18%;
+  }
+  
+  .nav-links li {
     margin: 0 15px;
-}
-
-.nav-links a {
+  }
+  
+  .nav-links a {
     color: var(--color-white);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
-}
-
-.nav-links a:hover {
+  }
+  
+  .nav-links a:hover {
     color: var(--color-yellow);
-}
-
-.join-btn {
+  }
+  
+  .join-btn {
     background-color: var(--color-yellow);
     color: var(--color-white);
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.join-btn:hover {
-    background-color: #ffb400;
-}
-
-.hero-section {
+  }
+  
+  .join-btn:hover {
+    background-color: #e0a800; /* Hover rengi için daha açık bir sarı tonu */
+  }
+  
+  .hero-section {
     height: 100vh;
     background: url("/Images/hero-man.jpg") no-repeat center center/cover;
     color: var(--color-white);
@@ -82,19 +83,22 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    
     flex-direction: column;
-}
-
-.hero-content {
-    max-width: 600px;
+  }
+  
+  .hero-content {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start; /* Merkezde hizala */
+  justify-content:flex-start; /* İçerikleri dikeyde ortalar */
+  text-align:start; 
 
-.hero-btn {
+  }
+  
+  .hero-btn {
     background-color: var(--color-blue);
     color: var(--color-white);
     border: none;
@@ -104,46 +108,51 @@ body {
     margin-bottom: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-.hero-btn:hover {
+  }
+  
+  .hero-btn:hover {
     background-color: #2b4580;
-}
-
-.hero-section h1 {
+  }
+  
+  .main-head {
+    margin-bottom: 20px; /* Başlık ile içerik arasındaki boşluk */
+  }
+  
+  .hero-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-.hero-section p {
+  }
+  
+  .hero-section p {
     font-size: 1.1rem;
     margin-bottom: 20px;
     max-width: 600px;
-}
-
-.hero-buttons {
+  }
+  
+  .hero-buttons {
     display: flex;
-    justify-content: center;
     gap: 10px;
-}
-
-.hero-buttons .btn {
+    justify-content: center; /* Butonları ortalar */
+  }
+  
+  .hero-buttons .btn {
     background-color: #343a40;
     color: var(--color-white);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-.hero-buttons .btn-secondary {
+  }
+  
+  .hero-buttons .btn-secondary {
     background-color: #6c757d;
-}
-
-.hero-buttons .btn:hover {
+  }
+  
+  .hero-buttons .btn:hover {
     background-color: #495057;
-}
-
-.hero-buttons .btn-secondary:hover {
+  }
+  
+  .hero-buttons .btn-secondary:hover {
     background-color: #5a6268;
-}
+  }
+  
