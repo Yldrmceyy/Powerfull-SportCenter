@@ -1,17 +1,11 @@
-
-/*
 :root {
-    --renk1: black;
-    /* Kırmızı 
-    --renk2: #585858;
-    /* gri 
-    --renk3: #355592;
-    /* Mavi 
-    --renk4: #f39c11;
-    /* Sarı 
-    --renk5: white;
-    --renk6: #f1f8ff;
-}*/
+    --color-black: black;
+    --color-gray: #585858;
+    --color-blue: #355592;
+    --color-yellow: #f39c11;
+    --color-white: white;
+    --color-light-blue: #f1f8ff;
+}
 
 * {
     margin: 0;
@@ -58,19 +52,19 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #FFC017;
+    color: var(--color-yellow);
 }
 
 .join-btn {
-    background-color: #FFC017;
-    color: #ffffff;
+    background-color: var(--color-yellow);
+    color: var(--color-white);
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -81,14 +75,39 @@ body {
 }
 
 .hero-section {
-    height: 70vh;
+    height: 100vh;
     background: url("/Images/hero-man.jpg") no-repeat center center/cover;
-    color: white;
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-btn {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #2b4580;
 }
 
 .hero-section h1 {
@@ -100,16 +119,19 @@ body {
     font-size: 1.1rem;
     margin-bottom: 20px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .hero-buttons .btn {
     background-color: #343a40;
-    color: white;
+    color: var(--color-white);
     padding: 10px 20px;
     text-decoration: none;
-    margin-right: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
