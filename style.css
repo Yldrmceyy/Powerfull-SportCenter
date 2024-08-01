@@ -24,17 +24,23 @@ body {
 
 .navbar {
   position: fixed;
+  
   width: 100%;
   top: 0;
   z-index: 1000;
-  /*background: var(--color-blue); /* Navbar arka plan rengi */
+  background-color: transparent; /* Default renk */
+  transition: background-color 0.6s; /* Geçiş efekti */
+}
+
+.navbar.scrolled{
+  background-color: var(--color-blue);
 }
 
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 20px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,7 +179,7 @@ body {
 /************************info-section***********************/
 
 .info-section {
-  background-color: aliceblue;
+  background-color: var(--color-light-blue);
   display: flex;
   justify-content: center;
   align-items: center;
