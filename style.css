@@ -221,17 +221,16 @@ body {
   position: relative;
 }
 .our-classes h2 {
+  color: var(--color-blue);
   font-size: 2.2rem;
-  margin-bottom: 10px;
   position: relative;
 }
 .our-classes p {
   font-size: 1rem;
   font-weight: bold;
   color: var(--color-gray);
-  margin: 0;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 40px auto 0 auto;
 }
 .our-classes h2::after {
   content: " ";
@@ -362,21 +361,71 @@ body {
 }
 
 .bmi-image h3 {
-  color: var(--color-gray);
+  color: var(--color-black);
+}
+.bmi-image span {
+  font-weight: 600;
+  color: var(--color-orange);
 }
 
 .bmi-image img {
   max-width: 100%;
-  height: auto;
-  padding: 5px;
 }
 
-.triangle{
+.triangle {
   position: absolute; /* .bmi-image'e göre konumlandırılır */
-  margin-left:30rem;
-  width:6%;
+  margin-top: -0.3rem;
+  margin-left: 20rem;
+  width: 6%;
   height: 10%;
   background-color: var(--color-orange);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#bbutton {
+  background-color: var(--color-yellow);
+  width: 100px;
+  height: 50px;
+}
+
+/* Our Best Trainers Section */
+.container-our-best-trainers {
+  background-color: var(--color-light-blue);
+  width: 100%;
+}
+.our-best-trainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.our-best-trainers h2 {
+  color: var(--color-blue);
+  font-size: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.our-best-trainers h2::after {
+  content: " ";
+  width: 100px;
+  height: 6px;
+  background-color: #ffc017;
+  position: absolute;
+  border-radius: 20px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.our-best-trainers p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-gray);
+  margin: 0;
+  max-width: 600px;
+  margin: 40px auto 0 auto;
 
 }
