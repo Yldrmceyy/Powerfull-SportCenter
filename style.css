@@ -394,7 +394,9 @@ body {
 .container-our-best-trainers {
   background-color: var(--color-light-blue);
   width: 100%;
+  padding: 3rem;
 }
+
 .our-best-trainers {
   display: flex;
   flex-direction: column;
@@ -406,7 +408,7 @@ body {
 .our-best-trainers h2 {
   color: var(--color-blue);
   font-size: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -423,19 +425,70 @@ body {
 }
 
 .our-best-trainers p {
-  font-size: 1rem;
+  font-size: smaller;
   font-weight: bold;
   color: var(--color-gray);
   max-width: 600px;
   margin: 40px auto 0 auto;
-
 }
 
-.trainer-cards{
+.trainer-cards {
   margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
 }
 
+.card {
+position: relative;
+  margin-bottom: 3rem;
+  border: 5px solid transparent;
+  overflow: hidden; /* İçeriğin taşmaması için ekledik */
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: solid 2px;
+  border-color: var(--color-orange);
+  border-radius: 10px;
+}
+
+
+.trainer-info {
+  position: absolute;
+  bottom: 1rem;
+  width: 90%; 
+  left: 5%; 
+  transform: translateX(-50%); 
+  
+  clip-path: polygon(
+    0 20%, 
+    14% 20%, 
+    14% 0%,
+    86% 0%,
+    86% 20%, 
+    100% 20%,
+    100% 80%, 
+    86% 80%,
+    86% 100%,
+    14% 100%,
+    14% 80%,
+    0 80%
+  );
+  
+  background-color: var(--color-blue);
+  color: white;
+  text-align: center;
+  padding: 1.9rem;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.card:hover .trainer-info {
+  opacity: 1;
+  transform: scaleY(1);
+}
