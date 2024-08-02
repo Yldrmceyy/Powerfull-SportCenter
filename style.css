@@ -24,15 +24,14 @@ body {
 
 .navbar {
   position: fixed;
-  
   width: 100%;
   top: 0;
   z-index: 1000;
-  background-color: transparent; /* Default renk */
-  transition: background-color 0.6s; /* Geçiş efekti */
+  background-color: transparent;
+  transition: background-color 0.8s;
 }
 
-.navbar.scrolled{
+.navbar.scrolled {
   background-color: var(--color-blue);
 }
 
@@ -40,7 +39,6 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -328,13 +326,11 @@ body {
 
 .bmi-text {
   flex: 1;
- 
 }
 
 .bmi-text h2 {
   font-size: 40px;
   color: var(--color-blue);
-
 }
 .bmi-text p {
   font-size: 14px;
@@ -359,6 +355,7 @@ body {
 }
 
 .bmi-image {
+  position: relative;
   flex: 1;
   padding-left: 20px;
   text-align: center;
@@ -366,11 +363,19 @@ body {
 
 .bmi-image h3 {
   color: var(--color-gray);
-  
 }
 
 .bmi-image img {
   max-width: 100%;
   height: auto;
   padding: 5px;
+}
+
+.triangle{
+  position: absolute; /* .bmi-image'e göre konumlandırılır */
+  width:8%;
+  height: 14%;
+  background-color: var(--color-orange);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
 }
