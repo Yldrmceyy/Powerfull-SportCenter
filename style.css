@@ -675,7 +675,7 @@ body {
   text-align: center;
   background-color: var(--color-light-blue);
   width: 100%;
-  padding: 3rem 3rem 5rem 3rem;
+  padding: 3rem 3rem 7rem 3rem;
 }
 
 .review-client {
@@ -726,12 +726,13 @@ body {
 .client-info {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 25px 20px 10px 25px;
   text-align: start;
 }
 .client-job-title {
   display: grid;
   gap: 0.5rem;
+  padding: 8px;
 }
 
 .client-info img {
