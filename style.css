@@ -513,7 +513,7 @@ body {
 }
 
 .card:hover::after {
-  animation: ceylan-y 2s linear infinite;
+  animation: ceylan-y 2s linear forwards;
 }
 
 @keyframes ceylan-y {
@@ -526,6 +526,7 @@ body {
   100% {
     clip-path: inset(25% 0 25% 0);
   }
+
 }
 
 @keyframes ceylan-x {
@@ -539,15 +540,6 @@ body {
     clip-path: inset(0% 25% 0% 25%);
   }
 }
-
-
-
-
-
-
-
-
-
 
 
 .trainer-info {
