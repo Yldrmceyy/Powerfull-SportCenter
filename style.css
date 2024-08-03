@@ -776,8 +776,6 @@ body {
   height: 35px;
 }
 
-
-
 /* Contact-Us section*/
 
 .container-contact-us {
@@ -822,64 +820,91 @@ body {
   margin: 40px auto 0 auto;
 }
 
-
-
 .contact-info {
   display: flex;
-  justify-content: center;
-  gap: 5rem;
-  margin-bottom: 3rem;
+  justify-content: start;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .info-item {
   text-align: left;
-  font-size: 1rem;
-  color: var(--color-black);
+  color: var(--color-gray);
+}
+.info-item h4{
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
+.info-item p{
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  max-width: 400px;
-  margin: auto;
+  width: 450px;
+  margin-bottom: 2rem;
+}
+.contact-form h3 {
+  color: var(--color-gray);
+  font-weight: 600;
+  font-size: larger;
+  text-align: left;
+  padding-bottom: 1rem;
 }
 
-
-.contact-form input,
-.contact-form textarea {
+.contact-form input{
   width: 100%;
   padding: 10px;
   border: none;
   background-color: var(--color-light-blue);
   border-radius: 5px;
 }
-
-.contact-form button {
-  background-color: var(--color-orange);
+.contact-form textarea{
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-light-blue);
   border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.contact-form button:hover {
-  background-color: var(--color-yellow);
+  border-radius: 5px;
 }
 
 
-
-
-
-.container-wrap{
+.container-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Change from 'center' to 'space-between' */
+  align-items: flex-start; /* Align items to the top */
   gap: 2rem;
+  margin: auto;
+  max-width: 1000px; /* Add a max-width to contain the layout */
 }
+
+
+
+
+.container-left {
+  margin-left: 0; /* Remove the previous margin */
+  width: 450px; /* Ensure a maximum width for better readability */
+  flex: 1;
+}
+
+.container-right {
+  margin-left: 0; /* Remove the previous margin */
+  width: 450px; /* Set a maximum width for the map */
+  flex: 1;
+}
+
+.googleMap {
+  width: 100%; /* Ensure the map fills the container */
+  
+  border-radius: 2px; /* Optional: add some rounding to the map corners */
+}
+
 
 
 
