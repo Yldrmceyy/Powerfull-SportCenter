@@ -710,7 +710,6 @@ body {
   color: var(--color-gray);
   max-width: 600px;
   margin: 40px auto 0 auto;
- 
 }
 
 .all-clients {
@@ -747,7 +746,7 @@ body {
   width: 450px;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  word-break:break-all;
+  word-break: break-all;
   background-color: var(--color-blue);
   text-align: start;
   color: var(--color-white);
@@ -905,65 +904,54 @@ body {
 /*Footer section */
 .container-footer {
   background-color: var(--color-blue);
-  
-  padding:  20px ; 
+
+  padding: 20px;
 }
 
-
-.footer-content-top{
+.footer-content-top {
   display: flex;
-align-items: start;
-flex-direction: column;
-justify-content: start;
-margin: auto;
-max-width: 1000px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  margin: auto;
+  max-width: 1000px;
 }
 
-.footer-content-top p{
+.footer-content-top p {
   color: var(--color-white);
   font-size: small;
   height: auto;
- 
 }
 
-
-.footer-links{
+.footer-links {
   display: flex;
   align-items: start;
   justify-content: space-evenly;
   justify-items: start;
- 
- 
- 
 }
 
-.footer-links h3{
+.footer-links h3 {
   color: var(--color-white);
-  font-size:larger;
+  font-size: larger;
   font-weight: 500;
-  margin: 20px auto 10px auto ;
+  margin: 20px auto 10px auto;
 }
 
 .footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
-
 
 .footer-column ul li {
   margin-bottom: 10px;
 
-  
   font-size: small;
-  
 }
 
 .footer-column ul li a {
   color: var(--color-white);
   text-decoration: none;
-  
 }
 
 .footer-column ul li a:hover {
@@ -973,8 +961,10 @@ max-width: 1000px;
 
 
 
-/*responsive design (mobil- 576px)*/
 
+
+
+/*responsive design (mobil- 576px)*/
 @media (max-width: 576px) {
   /* Purshase from us section*/
   .card-container {
