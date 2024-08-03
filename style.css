@@ -652,11 +652,13 @@ body {
 .card img {
   width: 100%;
   height: auto;
+  border-radius: 2%;
 }
 
 .card-body {
-  padding: 1rem;
+  padding: 1rem 0 0 0;
   text-align: center;
+ 
 }
 
 .product-name {
@@ -676,7 +678,7 @@ body {
 
 .add-to-cart {
   display: flex;
-  gap: 0.5rem;
+  gap: 4rem;
   align-items: center;
   justify-content: center;
   background-color: var(--color-white);
@@ -685,7 +687,9 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 98px 10px 20px;
+ 
+ 
   transition: background-color 0.2s;
 }
 
@@ -701,3 +705,4 @@ body {
 .card:hover {
   transform: translateY(-5px);
 }
+
