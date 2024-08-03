@@ -453,7 +453,7 @@ body {
 
 
 
-.trainer-cards {
+.best-trainer-cards {
   margin-top: 4rem;
   display: flex;
   align-items: center;
@@ -463,7 +463,7 @@ body {
   z-index: 2; 
 }
 
-.card img {
+.trainer-card img {
   display: block;
   width: 100%;
   height: auto;
@@ -472,22 +472,22 @@ body {
   border-radius: 10px;
 }
 
-.card {
+.trainer-card {
   position: relative;
   border: 5px solid transparent; 
   border-radius: 10px; 
   cursor: pointer;
 }
 
-.card::before,
-.card::after {
+.trainer-card::before,
+.trainer-card::after {
   position: absolute;
   content: "";
   z-index: -1;
 }
 
 
-.card::before {
+.trainer-card::before {
   top: -5%;
   left: -5%;
   background-color:var(--color-blue);
@@ -497,7 +497,7 @@ body {
   transition: clip-path 0.5s ease;
 }
 
-.card::after {
+.trainer-card::after {
   top: -5%;
   left: -5%;
   background-color: var(--color-blue);
@@ -508,11 +508,11 @@ body {
 }
 
 
-.card:hover::before {
+.trainer-card:hover::before {
   animation: ceylan-x  2s linear forwards;
 }
 
-.card:hover::after {
+.trainer-card:hover::after {
   animation: ceylan-y 2s linear forwards;
 }
 
@@ -571,7 +571,56 @@ body {
   transition: opacity 0.3s ease-in, transform 0.3s ease-in;
 }
 
-.card:hover .trainer-info {
+.trainer-card:hover .trainer-info {
   opacity: 1;
   transform: scaleY(1);
+}
+
+
+
+
+
+
+/* Purshase from us section*/
+
+.container-purchase-from-us {
+  text-align: center;
+  background-color: var(--color-white);
+  width: 100%;
+  padding: 3rem;
+}
+
+.purchase-from-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.purchase-from-us h2 {
+  color: var(--color-blue);
+  font-size: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.purchase-from-us h2::after {
+  content: " ";
+  width: 100px;
+  height: 6px;
+  background-color: #ffc017;
+  position: absolute;
+  border-radius: 20px;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.purchase-from-us p {
+  font-size: smaller;
+  font-weight: bold;
+  color: var(--color-gray);
+  max-width: 600px;
+  margin: 40px auto 0 auto;
 }
