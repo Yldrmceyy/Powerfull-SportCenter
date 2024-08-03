@@ -48,3 +48,4 @@ function calculateBMI() {
 document.querySelector("#height").addEventListener("keyup", calculateBMI);
 document.querySelector("#weight").addEventListener("keyup", calculateBMI);
 
+
