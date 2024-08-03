@@ -390,6 +390,18 @@ body {
   height: 50px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Our Best Trainers Section */
 .container-our-best-trainers {
   text-align: center;
@@ -465,60 +477,45 @@ body {
   border: 5px solid transparent; 
   border-radius: 10px; 
   cursor: pointer;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
 
 
+.card::before {
+  top: -5%;
+  left: -5%;
+  background-color:var(--color-blue);
+  width: 110%;
+  height: 110%;
+  clip-path: inset(0% 25% 0% 25%);
+  transition: clip-path 0.5s ease;
 }
 
 .card::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 107%;
-  width: 80%;
-  background-color: rgba(53, 85, 146, 1);
-  z-index: -1;
-  clip-path: inset(0% 50% 0% 50%);
- 
-}
-.card::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  height: 80%;
-  width: 107%;
-  background-color: rgba(53, 85, 146, 1);
-  z-index:  -1;
-  clip-path: inset(0% 50% 0% 50%);
-
+  top: -5%;
+  left: -5%;
+  background-color: var(--color-blue);
+  width: 110%;
+  height: 110%;
+  clip-path: inset(25% 0 25% 0);
 }
 
 
-
-.card:hover::after{
-  animation: ceylan-x 2s linear ;
-}
-.card:hover::before{
-  animation: ceylan-y 2s linear ;
+.card:hover::before {
+  animation: borderAnimation 2s linear infinite;
 }
 
-
-
-@keyframes ceylan-x {
-  0% {
-    clip-path: inset(0% 50% 0% 50%);
-  }
-  50% {
-    clip-path: inset(0% 0% 0% 0%);
-  }
-  100% {
-    clip-path: inset(0% 50% 0% 50%);
-  }
+.card:hover::after {
+  animation: ersin 2s linear infinite;
 }
-@keyframes ceylan-y {
+
+@keyframes ersin {
   0% {
     clip-path: inset(25% 0 25% 0);
   }
@@ -529,6 +526,28 @@ body {
     clip-path: inset(25% 0 25% 0);
   }
 }
+
+@keyframes borderAnimation {
+  0% {
+    clip-path: inset(0% 25% 0% 25%);
+  }
+  50% {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  100% {
+    clip-path: inset(0% 25% 0% 25%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 .trainer-info {
   position: absolute;
