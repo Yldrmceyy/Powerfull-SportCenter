@@ -875,7 +875,11 @@ body {
 
 
 
-
+.container-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
 
 
