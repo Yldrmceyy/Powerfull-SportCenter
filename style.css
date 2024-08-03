@@ -390,18 +390,6 @@ body {
   height: 50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Our Best Trainers Section */
 .container-our-best-trainers {
   text-align: center;
@@ -415,7 +403,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .our-best-trainers h2 {
@@ -438,20 +425,12 @@ body {
 }
 
 .our-best-trainers p {
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--color-gray);
   max-width: 600px;
   margin: 40px auto 0 auto;
 }
-
-
-
-
-
-
-
-
 
 .best-trainer-cards {
   margin-top: 4rem;
@@ -459,8 +438,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  position: relative; 
-  z-index: 2; 
+  position: relative;
+  z-index: 2;
 }
 
 .trainer-card img {
@@ -474,8 +453,8 @@ body {
 
 .trainer-card {
   position: relative;
-  border: 5px solid transparent; 
-  border-radius: 10px; 
+  border: 5px solid transparent;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -486,11 +465,10 @@ body {
   z-index: -1;
 }
 
-
 .trainer-card::before {
   top: -5%;
   left: -5%;
-  background-color:var(--color-blue);
+  background-color: var(--color-blue);
   width: 110%;
   height: 110%;
   clip-path: inset(1.5% 30% 1.5% 30%);
@@ -507,9 +485,8 @@ body {
   transition: clip-path 0.5s ease;
 }
 
-
 .trainer-card:hover::before {
-  animation: ceylan-x  2s linear forwards;
+  animation: ceylan-x 2s linear forwards;
 }
 
 .trainer-card:hover::after {
@@ -526,7 +503,6 @@ body {
   100% {
     clip-path: inset(25% 0 25% 0);
   }
-
 }
 
 @keyframes ceylan-x {
@@ -540,7 +516,6 @@ body {
     clip-path: inset(0% 25% 0% 25%);
   }
 }
-
 
 .trainer-info {
   position: absolute;
@@ -576,11 +551,6 @@ body {
   transform: scaleY(1);
 }
 
-
-
-
-
-
 /* Purshase from us section*/
 
 .container-purchase-from-us {
@@ -595,7 +565,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .purchase-from-us h2 {
@@ -624,9 +593,6 @@ body {
   max-width: 600px;
   margin: 40px auto 0 auto;
 }
-
-
-
 
 .card-container {
   display: flex;
@@ -658,7 +624,6 @@ body {
 .card-body {
   padding: 1rem 0 0 0;
   text-align: center;
- 
 }
 
 .product-name {
@@ -704,16 +669,13 @@ body {
   transform: translateY(-5px);
 }
 
-
-
-
 /* Review Client section*/
 
 .container-review-client {
   text-align: center;
   background-color: var(--color-light-blue);
   width: 100%;
-  padding: 3rem 3rem 5rem 3rem ;
+  padding: 3rem 3rem 5rem 3rem;
 }
 
 .review-client {
@@ -721,7 +683,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .review-client h2 {
@@ -744,62 +705,54 @@ body {
 }
 
 .review-client p {
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--color-gray);
   max-width: 600px;
   margin: 40px auto 0 auto;
 }
 
-
-
-
 .all-clients {
   display: flex;
-  gap: 3rem; 
-  flex-wrap: wrap; 
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .client {
   padding-top: 15px;
   width: 500px;
   text-align: start;
-  
 }
-.client-info{
+.client-info {
   display: flex;
   align-items: center;
   padding: 20px;
   text-align: start;
- 
-
 }
 .client-job-title {
   display: grid;
   gap: 0.5rem;
 }
 
-.client-info img{
+.client-info img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 
-.client-p{
-  
+.client-p {
   width: 450px;
   font-size: 0.8rem;
   line-height: 1.2rem;
   background-color: var(--color-blue);
   text-align: start;
   color: var(--color-white);
-  
   position: relative;
-  padding: 15px 15px;
+  padding: 15px;
   margin: auto;
 }
-  
+
 .client-p::before {
   content: "";
   position: absolute;
@@ -810,8 +763,6 @@ body {
   height: 35px;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
-
-
 
 .client-p::after {
   content: "";
@@ -824,36 +775,25 @@ body {
   height: 35px;
 }
 
-
-
-
-
-
-
 /*responsive design (mobil- 576px)*/
 
-
 @media (max-width: 576px) {
-
-
-
-
-/* Purshase from us section*/
+  /* Purshase from us section*/
   .card-container {
-      padding: 0;
-      gap: 0;
-      flex-direction: column;
-      align-items: center;
+    padding: 0;
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
-      width: 90%;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .add-to-cart {
-      gap: 1rem;
-      padding: 10px 112.3px;
+    gap: 1rem;
+    padding: 10px 112.3px;
   }
 }
