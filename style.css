@@ -438,7 +438,7 @@ body {
 }
 
 .our-best-trainers p {
-  font-size: smaller;
+  font-size:1rem;
   font-weight: bold;
   color: var(--color-gray);
   max-width: 600px;
@@ -618,7 +618,7 @@ body {
 }
 
 .purchase-from-us p {
-  font-size: smaller;
+  font-size: 1rem;
   font-weight: bold;
   color: var(--color-gray);
   max-width: 600px;
@@ -713,7 +713,7 @@ body {
   text-align: center;
   background-color: var(--color-light-blue);
   width: 100%;
-  padding: 3rem;
+  padding: 3rem 3rem 5rem 3rem ;
 }
 
 .review-client {
@@ -744,7 +744,7 @@ body {
 }
 
 .review-client p {
-  font-size: smaller;
+  font-size:1rem;
   font-weight: bold;
   color: var(--color-gray);
   max-width: 600px;
@@ -754,9 +754,75 @@ body {
 
 
 
+.all-clients {
+  display: flex;
+  gap: 3rem; 
+  flex-wrap: wrap; 
+}
+
+.client {
+  padding-top: 15px;
+  width: 500px;
+  text-align: start;
+  
+}
+.client-info{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-align: start;
+ 
+
+}
+.client-job-title {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.client-info img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.client-p{
+  
+  width: 450px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  background-color: var(--color-blue);
+  text-align: start;
+  color: var(--color-white);
+  
+  position: relative;
+  padding: 15px 15px;
+  margin: auto;
+}
+  
+.client-p::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(152, 165, 189);
+  left: 0;
+  top: 100%;
+  width: 40px;
+  height: 35px;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
 
 
 
+.client-p::after {
+  content: "";
+  position: absolute;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+  background-color: rgb(152, 165, 189);
+  right: 0;
+  top: 100%;
+  width: 40px;
+  height: 35px;
+}
 
 
 
