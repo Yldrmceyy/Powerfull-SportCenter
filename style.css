@@ -266,8 +266,19 @@ body {
   margin: 0 10px;
   font-weight: 700;
   font-size: 20px;
+  position: relative;
+  justify-content: center;
 }
-
+.btn::after{
+  content: "";
+  position: absolute;
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+  background-color: var(--color-yellow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  top: 100%;
+  width: 20px;
+  height: 10px;
+}
 .btn:hover {
   background-color: #ffc017;
   cursor: pointer;
