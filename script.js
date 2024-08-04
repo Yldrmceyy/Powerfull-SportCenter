@@ -12,6 +12,39 @@ window.addEventListener("scroll", function () {
   }
 });
 
+//Button-classes
+
+//Selecting Elements
+document.addEventListener('DOMContentLoaded', function() {
+  const buttons = document.querySelectorAll('.btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      buttons.forEach(btn => btn.classList.remove('btn-active'));
+      this.classList.add('btn-active');
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // BMI Calculator
 
 function calculateBMI() {
@@ -47,5 +80,3 @@ function calculateBMI() {
 // Adding event listeners to input fields
 document.querySelector("#height").addEventListener("keyup", calculateBMI);
 document.querySelector("#weight").addEventListener("keyup", calculateBMI);
-
-

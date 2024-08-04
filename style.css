@@ -256,7 +256,7 @@ body {
   align-items: center;
   gap: 7rem;
 }
-.button-our-classes .btn {
+.btn {
   background-color: var(--color-blue);
   display: flex;
   border-radius: 4px;
@@ -268,21 +268,28 @@ body {
   font-size: 20px;
   position: relative;
   justify-content: center;
+  cursor: pointer;
 }
-.btn::after{
+
+
+.btn-active {
+  background-color: var(--color-yellow);
+  box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-active::after {
   content: "";
   position: absolute;
   clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
   background-color: var(--color-yellow);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
   top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 20px;
   height: 10px;
 }
-.btn:hover {
-  background-color: #ffc017;
-  cursor: pointer;
-}
+
 
 .content {
   padding: 4% 24%;
