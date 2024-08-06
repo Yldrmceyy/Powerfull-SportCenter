@@ -1,7 +1,7 @@
 :root {
   --color-black: black;
   --color-gray: #585858;
-  --color-blue: #355592;
+  --color-blue: rgb(53, 85, 146);
   --color-yellow: #ffc017;
   --color-orange: #f39c11;
   --color-white: white;
