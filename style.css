@@ -579,7 +579,7 @@ body {
   text-align: center;
   background-color: var(--color-white);
   width: 100%;
-  padding: 3rem;
+  padding: 4rem ;
 }
 
 .purchase-from-us {
@@ -628,13 +628,14 @@ body {
   background-color: var(--color-white);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  width: calc(25% - 150px);
+  width: calc(25% - 2rem);
   text-align: center;
   color: rgb(0, 0, 0);
   position: relative;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: transform 0.2s;
+
 }
 
 .card img {
@@ -665,7 +666,6 @@ body {
 
 .add-to-cart {
   display: flex;
-  gap: 4rem;
   align-items: center;
   justify-content: center;
   background-color: var(--color-white);
@@ -674,7 +674,9 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  padding: 10px 98px 10px 20px;
+  padding: 10px 20px;
+  margin: auto;
+  width: 100%; 
   transition: background-color 0.2s;
 }
 
