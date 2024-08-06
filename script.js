@@ -12,34 +12,17 @@ window.addEventListener("scroll", function () {
   }
 });
 
-//Button-classes
-
+//Our-Classes-Buttons
 //Selecting Elements
-document.addEventListener('DOMContentLoaded', function() {
-  const buttons = document.querySelectorAll('.btn');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      buttons.forEach(btn => btn.classList.remove('btn-active'));
-      this.classList.add('btn-active');
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".btn");
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      buttons.forEach((btn) => btn.classList.remove("btn-active"));
+      this.classList.add("btn-active");
     });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
