@@ -15,10 +15,7 @@
   font-family: "Poppins", sans-serif;
  
 }
-/**
-html{
-  scroll-behavior:smooth;
-}*/
+
 body {
   line-height: 1.2;
   color: #333;
@@ -76,8 +73,12 @@ body {
   transition: color 0.3s;
 }
 
+.nav-links a.active {
+  color: var(--color-yellow); /* Tıklanınca değişecek renk */
+}
+
 .nav-links a:hover {
-  color: var(--color-orange);
+  color: var(--color-yellow);
 }
 
 .join-btn {
