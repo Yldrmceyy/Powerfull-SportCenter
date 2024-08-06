@@ -15,9 +15,10 @@
   font-family: "Poppins", sans-serif;
  
 }
+/**
 html{
   scroll-behavior:smooth;
-}
+}*/
 body {
   line-height: 1.2;
   color: #333;
@@ -32,11 +33,16 @@ body {
   top: 0;
   z-index: 1000;
   background-color: transparent;
-  transition: background-color 0.8s;
+  transition:  background-color 0.8s;
 }
 
 .navbar.scrolled {
   background-color: var(--color-blue);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  scroll-behavior:smooth;
+  border-bottom: 0.5px solid var(--color-light-blue);
+
 }
 
 .container {
