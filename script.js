@@ -12,8 +12,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 //Our-Classes-Buttons
 //Selecting Elements
 document.addEventListener("DOMContentLoaded", function () {
@@ -22,13 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       buttons.forEach((btn) => btn.classList.remove("btn-active"));
       this.classList.add("btn-active");
+      // Hangi içeriğin gösterileceğini belirle
+      const targetId = this.getAttribute("data-target");
+
+      // Tüm içerikleri gizle
+      document.querySelectorAll(".content").forEach((content) => {
+        content.style.display = "none";
+      });
+
+      // Belirtilen içeriği göster
+      document.getElementById(targetId).style.display = "block";
     });
   });
 });
-
-
-
-
 
 // BMI Calculator
 
