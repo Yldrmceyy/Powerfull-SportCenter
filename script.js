@@ -20,19 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       buttons.forEach((btn) => btn.classList.remove("btn-active"));
       this.classList.add("btn-active");
-      // Hangi içeriğin gösterileceğini belirle
-      const targetId = this.getAttribute("data-target");
 
-      // Tüm içerikleri gizle
+      // Determine which content to show
+      const targetId = this.getAttribute("data-target");
+      
+      // Hide all content sections
       document.querySelectorAll(".content").forEach((content) => {
         content.style.display = "none";
       });
-
-      // Belirtilen içeriği göster
-      document.getElementById(targetId).style.display = "block";
+      
+      // Show the targeted content section
+      document.getElementById(targetId).style.display = "flex";
     });
   });
 });
+
 
 // BMI Calculator
 
