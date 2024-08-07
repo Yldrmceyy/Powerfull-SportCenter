@@ -54,18 +54,25 @@ function calculateBMI() {
   // Calculating BMI
   let bmi = (weightInput / ((heightInput * heightInput) / 10000)).toFixed(1);
 
-  // Displaying Result
+  // Displaying Result and adjusting triangle position
+  let position;
   if (bmi < 18.5) {
-    result.textContent = bmi + "-> Underweight";
+    result.textContent = bmi + " -> Underweight";
+    position = 10; // Fixed position for underweight
   } else if (bmi >= 18.5 && bmi < 24.9) {
-    result.textContent = bmi + "-> Normal";
+    result.textContent = bmi + " -> Normal";
+    position = 10 + ((bmi - 18.5) / (24.9 - 18.5)) * 20; // Calculate position within 10% to 30%
   } else if (bmi >= 25 && bmi < 29.9) {
-    result.textContent = bmi + "-> Overweight";
+    result.textContent = bmi + " -> Overweight";
+    position = 30 + ((bmi - 25) / (29.9 - 25)) * 20; // Calculate position within 30% to 50%
   } else if (bmi >= 30 && bmi < 39.9) {
-    result.textContent = bmi + "-> Obese";
+    result.textContent = bmi + " -> Obese";
+    position = 50 + ((bmi - 30) / (39.9 - 30)) * 20; // Calculate position within 50% to 70%
   } else {
-    result.textContent = bmi + "->Extremely Obese";
+    result.textContent = bmi + " -> Extremely Obese";
+    position = 70 + ((bmi - 40) / (50 - 40)) * 20; // Calculate position within 70% to 90%
   }
+  triangle.style.left = position + "%";
 }
 
 // Adding event listeners to input fields
