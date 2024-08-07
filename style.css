@@ -13,13 +13,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
- 
 }
 
 body {
   line-height: 1.2;
   color: #333;
-  
 }
 
 /************************navbar***********************/
@@ -30,16 +28,15 @@ body {
   top: 0;
   z-index: 1000;
   background-color: transparent;
-  transition:  background-color 0.8s;
+  transition: background-color 0.8s;
 }
 
 .navbar.scrolled {
   background-color: var(--color-blue);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
   border-bottom: 0.5px solid var(--color-light-blue);
-
 }
 
 .container {
@@ -49,16 +46,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .brand-logo img {
   width: 250px;
+  margin-left: 5rem;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin-right: 18%;
 }
 
@@ -97,12 +96,15 @@ body {
 .hero-section {
   height: 90vh;
   background: url("/Images/hero-man.jpg") no-repeat center center/cover;
+  
   color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+
+  padding: 0 12rem;
 }
 
 .hero-content {
@@ -113,7 +115,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: start;
-  padding-bottom: 20px
+  padding-bottom: 20px;
 }
 
 .hero-btn {
@@ -125,7 +127,7 @@ body {
   font-size: larger;
   font-weight: 800;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-top: 80px;
+  margin-top: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -147,13 +149,13 @@ body {
   margin-bottom: 10px;
   max-width: 1000px;
   background-color: rgb(0, 0, 0, 0.6);
-  padding: 5px ;
+  padding: 5px;
 }
 
 .hero-buttons {
   display: flex;
   gap: 40px;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .hero-buttons .btn {
@@ -165,7 +167,6 @@ body {
   font-weight: 600;
   border-radius: 5px;
   transition: background-color 0.3s;
- 
 }
 
 .hero-buttons .btn-secondary {
@@ -200,8 +201,8 @@ body {
 
 .info-section .box {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   background-color: white;
   border-radius: 5px;
@@ -226,8 +227,6 @@ body {
 /************************Our-Classes-section***********************/
 .container-our-classes {
   background: linear-gradient(-105deg, rgb(246, 246, 246) 58%, white 45%);
-
- 
 }
 .our-classes {
   text-align: center;
@@ -282,7 +281,6 @@ body {
   cursor: pointer;
 }
 
-
 .btn-active {
   background-color: var(--color-yellow);
   box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
@@ -301,15 +299,13 @@ body {
   height: 10px;
 }
 
-
 .content {
- padding: 4rem 16rem;
- margin: auto;
+  padding: 4rem 16rem;
+  margin: auto;
   display: flex;
   justify-content: start;
   align-items: flex-start;
   gap: 1rem;
-  
 }
 
 .text-section {
@@ -321,7 +317,7 @@ body {
 }
 
 .text-section h2 {
-  font-size:x-large;
+  font-size: x-larger;
   font-weight: 800;
 }
 
@@ -347,11 +343,10 @@ body {
   border-radius: 1%;
 }
 
-
 /* BMI Calculator Section */
 .bmi-section {
   background-color: #fff;
-  padding: 40px 20px;
+ 
 }
 
 .bmi-container {
@@ -360,6 +355,7 @@ body {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
+  padding:2rem 4rem ;
 }
 
 .bmi-text {
@@ -432,7 +428,7 @@ body {
   text-align: center;
   background-color: var(--color-light-blue);
   width: 100%;
-  padding: 4rem ;
+  padding: 4rem;
 }
 
 .our-best-trainers {
@@ -594,7 +590,7 @@ body {
   text-align: center;
   background-color: var(--color-white);
   width: 100%;
-  padding: 4rem ;
+  padding: 4rem;
 }
 
 .purchase-from-us {
@@ -650,7 +646,6 @@ body {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: transform 0.2s;
-
 }
 
 .card img {
@@ -691,7 +686,7 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   margin: auto;
-  width: 100%; 
+  width: 100%;
   transition: background-color 0.2s;
 }
 
@@ -996,12 +991,6 @@ body {
 .footer-column ul li a:hover {
   text-decoration: underline;
 }
-
-
-
-
-
-
 
 /*responsive design (mobil- 576px)*/
 @media (max-width: 576px) {
