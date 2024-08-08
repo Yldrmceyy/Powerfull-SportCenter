@@ -699,6 +699,7 @@ body {
   background-color: var(--color-light-blue);
   width: 100%;
   padding: 4rem 3rem 7rem 3rem;
+  overflow: hidden;
 }
 
 .review-client {
