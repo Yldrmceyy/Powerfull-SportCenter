@@ -1077,4 +1077,11 @@ body {
     gap: 1rem;
     padding: 10px 112.3px;
   }
+
+  .container-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
