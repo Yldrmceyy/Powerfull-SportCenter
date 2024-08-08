@@ -76,3 +76,10 @@ function calculateBMI() {
 // Adding event listeners to input fields
 document.querySelector("#height").addEventListener("keyup", calculateBMI);
 document.querySelector("#weight").addEventListener("keyup", calculateBMI);
+
+
+//Hmaburger Menu
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}
