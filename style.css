@@ -46,7 +46,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .brand-logo img {
@@ -96,7 +95,7 @@ body {
 .hero-section {
   height: 90vh;
   background: url("/Images/hero-man.jpg") no-repeat center center/cover;
-  
+
   color: var(--color-white);
   display: flex;
   align-items: center;
@@ -109,13 +108,14 @@ body {
 
 .hero-content {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   text-align: start;
-  padding-bottom: 20px;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 
 .hero-btn {
@@ -344,9 +344,9 @@ body {
 }
 
 /* BMI Calculator Section */
+/* BMI Calculator Section */
 .bmi-section {
   background-color: #fff;
- 
 }
 
 .bmi-container {
@@ -355,7 +355,8 @@ body {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding:2rem 4rem ;
+  padding: 2rem 4rem;
+  position: relative;
 }
 
 .bmi-text {
@@ -366,6 +367,7 @@ body {
   font-size: 40px;
   color: var(--color-blue);
 }
+
 .bmi-text p {
   font-size: 14px;
   line-height: 1.4rem;
@@ -398,6 +400,7 @@ body {
 .bmi-image h3 {
   color: var(--color-black);
 }
+
 .bmi-image span {
   font-weight: 600;
   color: var(--color-orange);
@@ -408,19 +411,12 @@ body {
 }
 
 .triangle {
-  position: absolute; /* .bmi-image'e göre konumlandırılır */
-  margin-top: -0.3rem;
-  margin-left: 20rem;
-  width: 6%;
+  position: absolute;
+  bottom: -1.5rem;
+  width: 5%;
   height: 10%;
   background-color: var(--color-orange);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
-#bbutton {
-  background-color: var(--color-yellow);
-  width: 100px;
-  height: 50px;
 }
 
 /* Our Best Trainers Section */
