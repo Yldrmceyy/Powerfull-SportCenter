@@ -1,4 +1,4 @@
-# Powerful Gym Website
+# Powerfull Sport Center WebSite
 
 This repository contains the source code for the Powerful Gym website. The website is designed to provide information about gym classes, trainers, and equipment available for purchase. It also includes a BMI calculator and a contact form with an embedded Google Map.
 
@@ -6,10 +6,7 @@ This repository contains the source code for the Powerful Gym website. The websi
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Responsive Design](#responsive-design)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 - **Responsive Navbar**: Always visible with a background color of `#355592` while scrolling.
@@ -32,4 +29,9 @@ This repository contains the source code for the Powerful Gym website. The websi
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/powerful-gym.git
+   git clone https://github.com/Yldrmceyy/Powerfull-SportCenter.git
+
+2. Navigate into the project directory:
+``cd Powerfull-SportCenter``
+
+ 
