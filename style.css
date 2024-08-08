@@ -59,13 +59,15 @@ body {
   background-color: var(--color-dark-blue); 
   border-radius: 20%; 
   cursor: pointer;
+
   margin-right: 2rem;
   padding: 4px 8px; 
   border: 1px solid rgb(241, 248, 255,0.4); 
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
- 
-
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Hafif gölgelendirme */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
 }
+
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -933,7 +935,8 @@ body {
 }
 
 .googleMap {
-  width: 100%;
+  width:450px;
+  height: 350px;
   border-radius: 2px;
 }
 
@@ -995,7 +998,7 @@ body {
 }
 
 /*responsive design (mobil- 576px)*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   /*Navbar*/
   .container {
     justify-content: space-between;
@@ -1037,18 +1040,18 @@ body {
   /*Hero section*/
   .hero-section {
     padding-left: 0;
-
     height: auto;
     text-align: left;
+    overflow: hidden;
   }
 
   .hero-content {
     width: 80vh;
-    height: 120vh;
+    height: 100vh;
     padding-top: 9rem;
     padding-bottom: 2rem;
     align-items: left;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .hero-section h1 {
@@ -1056,6 +1059,7 @@ body {
     width: 500px;
     text-align: left;
     padding-top: 0.6rem;
+    
   }
   .mobile-hide {
     display: none;
@@ -1221,5 +1225,166 @@ body {
   }
   .footer-column {
     padding-right: 20%;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Navbar adjustments */
+  .navbar .nav-links {
+    display: flex;
+    justify-content:center;
+    
+  }
+  /* Hero section adjustments */
+  .hero-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Info section adjustments */
+  .info-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .info-section .box {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  /* Our Classes section adjustments */
+  .container-our-classes .our-classes h2 {
+    font-size: 2rem;
+  }
+
+  .classes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .classes-section .button-our-classes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .classes-section .content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .classes-section .image img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  /* BMI Section adjustments */
+  .bmi-section .bmi-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bmi-section .bmi-text,
+  .bmi-section .bmi-image {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  /* Trainers section adjustments */
+  .container-our-best-trainers .trainer-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  /* Purchase section adjustments */
+  .container-purchase-from-us .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .container-purchase-from-us .card {
+    width: 45%;
+    margin-bottom: 20px;
+    
+  }
+
+
+
+
+  /* Review section adjustments */
+  .container-review-client .all-clients {
+    display: flex;
+    margin-top: 20px;
+    
+  }
+
+  .container-review-client .client {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+   
+  }
+
+
+  /* Contact section adjustments */
+  .container-contact-us .container-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-contact-us .container-left,
+  .container-contact-us .container-right {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  /* Footer adjustments */
+  .container-footer {
+    padding: 20px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
   }
 }
