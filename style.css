@@ -95,7 +95,7 @@ body {
 .hero-section {
   height: 90vh;
   background: url("/Images/hero-man.jpg") no-repeat center center/cover;
-
+  background-size: cover; /* Resmi tamamen kapla */
   color: var(--color-white);
   display: flex;
   align-items: center;
@@ -140,7 +140,6 @@ body {
 .hero-section h1 {
   font-size: 5rem;
   margin-bottom: 20px;
-  
 }
 
 .hero-section p {
@@ -991,56 +990,47 @@ body {
 
 /*responsive design (mobil- 576px)*/
 @media (max-width: 576px) {
+  .navbar {
+    display: none;
+  }
+
   /*Hero section*/
 
   .hero-section {
-    padding: 0 1rem; /* Yan boşlukları kaldır */
-    height: auto; /* Yüksekliği otomatik yap */
-    text-align: left; /* Metin hizalamasını sola yasla */
+    padding: 0 1rem;
+    height: auto;
+    text-align: left;
   }
 
   .hero-content {
     padding-top: 4rem;
     padding-bottom: 2rem;
     align-items: left;
-  
   }
 
   .hero-section h1 {
-    font-size: 2.5rem; /* Daha küçük font boyutu */
-    text-align: left; /* Metin hizalamasını sola yasla */
-    
+    font-size: 2.5rem;
+    text-align: left;
+    padding-top: 0.6rem;
   }
 
   .hero-section p {
-    width:500px;
-    font-size: 1rem; /* Daha küçük font boyutu */
-  
+    width: 500px;
+    font-size: 1rem;
   }
- 
+
   .hero-buttons {
     flex-direction: column;
     gap: 20px;
-    text-align: left; /* Metin hizalamasını sola yasla */
-    align-items: flex-start; /* Sol hizala */
+    text-align: left;
+    align-items: flex-start;
   }
 
   .hero-buttons .btn-first,
   .hero-buttons .btn-secondary {
-   
-    padding: 0.5rem 12rem; 
+    padding: 0.5rem 12rem;
     font-size: 1.2rem;
- 
   }
-
-
-
-
-
-
-
-
-
 
   /*info section*/
   .info-section {
@@ -1051,6 +1041,17 @@ body {
   .info-section .box {
     width: 100%; /* Kutuların genişliğini tam genişliğe ayarlayın */
     margin: 15px 0; /* Yukarı ve aşağı margin vererek kutular arasında boşluk bırakın */
+  }
+
+  /*Bmi calculator*/
+  .bmi-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .bmi-image{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
   }
 
   /*our-best-trainers section*/
