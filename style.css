@@ -18,7 +18,6 @@
 body {
   line-height: 1.2;
   color: #333;
-
 }
 
 /************************navbar***********************/
@@ -53,13 +52,20 @@ body {
   width: 250px;
   margin-left: 5rem;
 }
-.navbar .hamburger-menu {
-  font-size: 3rem;
-  color: white;
-  cursor: pointer;
+.hamburger-menu {
   display: none;
-}
+  font-size: 2rem;
+  color: var(--color-white); 
+  background-color: var(--color-dark-blue); 
+  border-radius: 20%; 
+  cursor: pointer;
+  margin-right: 2rem;
+  padding: 4px 8px; 
+  border: 1px solid rgb(241, 248, 255,0.4); 
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+ 
 
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -79,7 +85,7 @@ body {
 }
 
 .nav-links a.active {
-  color: var(--color-yellow); 
+  color: var(--color-yellow);
 }
 
 .nav-links a:hover {
@@ -108,7 +114,7 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  padding: 0 2rem; 
+  padding: 0 2rem;
 }
 
 .hero-content {
@@ -159,7 +165,7 @@ body {
 
 .hero-buttons {
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .hero-buttons .btn-first {
@@ -185,7 +191,8 @@ body {
   transition: background-color 0.3s;
 }
 
-.hero-buttons .btn-first:hover, .hero-buttons .btn-secondary:hover {
+.hero-buttons .btn-first:hover,
+.hero-buttons .btn-secondary:hover {
   background-color: var(--color-orange);
 }
 
@@ -698,7 +705,6 @@ body {
   transform: translateY(-5px);
 }
 
-
 /* Review Client section*/
 .container-review-client {
   text-align: center;
@@ -990,29 +996,33 @@ body {
 
 /*responsive design (mobil- 576px)*/
 @media (max-width: 576px) {
+  /*Navbar*/
   .container {
-    justify-content: flex-start; /* Logoyu sola kaydırmak için */
+    justify-content: space-between;
   }
-
-  .hamburger-menu {
-    display: block;
-    margin-left: auto; /* Hamburger menüyü sağa kaydırmak için */
+  .brand-logo img {
+    width: 250px;
+    margin-left: 2rem;
   }
-
   .nav-links {
-    display: none;
+    display: none; 
     flex-direction: column;
     width: 100%;
     background-color: var(--color-blue);
     position: absolute;
-    top: 60px; /* Navbar yüksekliğine göre ayarlayın */
-    right: 0;
-    transition: transform 0.3s ease-in-out; /* Açılırken düzgün animasyon için */
+    top: 5rem;
+    transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
   }
 
   .nav-links.show {
+    display: flex;
     transform: translateX(0);
+  }
+
+  .hamburger-menu {
+    display: inline-block;
+   
   }
 
   .nav-links li {
@@ -1024,17 +1034,10 @@ body {
     margin: 1em auto;
   }
 
-.brand-logo img {
-  width: 250px; 
-  margin-left: 1rem; 
-}
-
-
-
   /*Hero section*/
   .hero-section {
     padding-left: 0;
-   
+
     height: auto;
     text-align: left;
   }
@@ -1046,7 +1049,6 @@ body {
     padding-bottom: 2rem;
     align-items: left;
     overflow-x: hidden;
-
   }
 
   .hero-section h1 {
@@ -1056,8 +1058,8 @@ body {
     padding-top: 0.6rem;
   }
   .mobile-hide {
-    display: none; 
-}
+    display: none;
+  }
   .hero-section p {
     width: 450px;
     font-size: 1rem;
@@ -1074,11 +1076,8 @@ body {
   .hero-buttons .btn-secondary {
     padding: 0.5rem 12rem;
     font-size: 1rem;
-
-
-    
   }
- 
+
   /*info section*/
   .info-section {
     flex-direction: column;
@@ -1089,10 +1088,6 @@ body {
     width: 100%;
     margin: 15px 0;
   }
-
-
-
-
 
   /* Our-clases section */
   .container-our-classes {
@@ -1184,7 +1179,6 @@ body {
     width: 100%;
     height: 100%;
     padding: 2rem 0;
-    
   }
   .bmi-image .triangle {
     margin-bottom: 1.8rem;
