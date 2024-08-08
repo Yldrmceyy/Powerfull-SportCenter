@@ -1035,138 +1035,112 @@ body {
   /*info section*/
   .info-section {
     flex-direction: column;
-    padding: 0 15%; 
+    padding: 0 15%;
   }
 
   .info-section .box {
-    width: 100%; 
-    margin: 15px 0; 
+    width: 100%;
+    margin: 15px 0;
   }
 
+  /* Our-clases section */
+  /* Container adjustments */
+  .container-our-classes {
+    padding: 1rem;
+    background: linear-gradient(-105deg, rgb(246, 246, 246) 100%, white 0%);
+  }
 
- 
-/* Our-clases section */
-/* Container adjustments */
-.container-our-classes {
-  padding: 1rem;
-  background: linear-gradient(-105deg, rgb(246, 246, 246) 100%, white 0%);
-}
+  .our-classes h2 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
 
-.our-classes h2 {
-  font-size: 1.8rem;
-  margin-top: 2rem;
-}
+  .our-classes p {
+    font-size: 0.9rem;
+    margin: 20px auto 0 auto;
+    padding: 0 10px;
+    max-width: 100%;
+  }
 
-.our-classes p {
-  font-size: 0.9rem;
-  margin: 20px auto 0 auto;
-  padding: 0 10px;
-  max-width: 100%;
-}
+  /* Button layout changes */
+  .button-our-classes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 
-/* Button layout changes */
-.button-our-classes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
+  .btn {
+    font-size: 1rem;
+    padding: 8px 12px;
+    margin: 0;
+    width: 48%;
+    text-align: center;
+  }
 
-.btn {
-  font-size: 1rem;
-  padding: 8px 12px;
-  margin: 0;
-  width: 48%; 
-  text-align: center;
-}
+  /* Content layout changes */
+  .content {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+    text-align: center;
+  }
 
-/* Content layout changes */
-.content {
-  flex-direction: column;
-  padding: 2rem 1rem;
-  align-items: center;
-  text-align: center;
-}
+  .text-section {
+    max-width: 100%;
+    padding: 0;
+  }
 
-.text-section {
-  max-width: 100%;
-  padding: 0;
-}
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
 
-.text-section h2 {
-  font-size: 1.5rem;
-}
+  .text-section .p-info {
+    padding-right: 0;
+    padding: 0 10px;
+    font-size: 0.9rem;
+    word-break: normal;
+    line-height: 1.3rem;
+  }
 
-.text-section .p-info {
-  padding-right: 0;
-  padding: 0 10px;
-  font-size: 0.9rem;
-  word-break: normal;
-  line-height: 1.3rem;
-}
+  .text-section .p-date {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 0 10px;
+  }
 
-.text-section .p-date {
-  font-size: 1rem;
-  line-height: 2rem;
-  padding: 0 10px;
-}
+  .image {
+    padding-top: 2rem;
+    width: 100%;
+  }
 
-.image {
-  padding-top: 2rem;
-  width: 100%;
-}
-
-.image img {
-  width: 100%;
-  height: auto;
-  border-radius: 1%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+  }
 
   /*Bmi calculator*/
   .bmi-container {
     display: flex;
     flex-direction: column;
   }
+  .bmi-container p {
+    padding-right: 2rem;
+    word-break: keep-all;
+  }
   .bmi-image {
     width: 100%;
     height: 100%;
     padding: 2rem 0;
   }
-  .bmi-container p{
-   padding-right: 2rem;
-   word-break:keep-all;
+  .bmi-image .triangle {
+    margin-bottom: 1.8rem;
   }
 
 
+  
   /*our-best-trainers section*/
   .best-trainer-cards {
     flex-direction: column;
@@ -1199,14 +1173,10 @@ body {
     align-items: center;
   }
 
-
-.footer-links{
-  justify-content: space-between;
- 
- 
-}
-.footer-column{
-  padding-right: 20%;
-}
-
+  .footer-links {
+    justify-content: space-between;
+  }
+  .footer-column {
+    padding-right: 20%;
+  }
 }
