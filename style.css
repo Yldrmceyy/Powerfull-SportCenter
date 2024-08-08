@@ -55,18 +55,17 @@ body {
 .hamburger-menu {
   display: none;
   font-size: 2rem;
-  color: var(--color-white); 
-  background-color: var(--color-dark-blue); 
-  border-radius: 20%; 
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  border-radius: 20%;
   cursor: pointer;
 
   margin-right: 2rem;
-  padding: 4px 8px; 
-  border: 1px solid rgb(241, 248, 255,0.4); 
+  padding: 4px 8px;
+  border: 1px solid rgb(241, 248, 255, 0.4);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Hafif gölgelendirme */
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
-
 
 .nav-links {
   list-style: none;
@@ -935,7 +934,7 @@ body {
 }
 
 .googleMap {
-  width:450px;
+  width: 450px;
   height: 350px;
   border-radius: 2px;
 }
@@ -1008,7 +1007,7 @@ body {
     margin-left: 2rem;
   }
   .nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
     width: 100%;
     background-color: var(--color-blue);
@@ -1025,7 +1024,6 @@ body {
 
   .hamburger-menu {
     display: inline-block;
-   
   }
 
   .nav-links li {
@@ -1059,7 +1057,6 @@ body {
     width: 500px;
     text-align: left;
     padding-top: 0.6rem;
-    
   }
   .mobile-hide {
     display: none;
@@ -1228,18 +1225,13 @@ body {
   }
 }
 
-
-
-
-
-
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Navbar adjustments */
   .navbar .nav-links {
     display: flex;
-    justify-content:center;
-    
+    justify-content: center;
   }
+
   /* Hero section adjustments */
   .hero-content {
     text-align: center;
@@ -1309,7 +1301,6 @@ body {
   .bmi-section .bmi-image {
     width: 100%;
     text-align: center;
-
   }
 
   /* Trainers section adjustments */
@@ -1328,17 +1319,12 @@ body {
   .container-purchase-from-us .card {
     width: 45%;
     margin-bottom: 20px;
-    
   }
-
-
-
 
   /* Review section adjustments */
   .container-review-client .all-clients {
     display: flex;
     margin-top: 20px;
-    
   }
 
   .container-review-client .client {
@@ -1347,9 +1333,7 @@ body {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
-   
   }
-
 
   /* Contact section adjustments */
   .container-contact-us .container-wrap {
