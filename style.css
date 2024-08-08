@@ -420,7 +420,7 @@ body {
 
 .triangle {
   position: absolute;
-  margin:0 0 0 2rem;
+  margin: 0 0 0 2rem;
   width: 5%;
   height: 10%;
   background-color: var(--color-orange);
@@ -1038,7 +1038,7 @@ body {
 
   /*Hero section*/
   .hero-section {
-    padding-left: 0;
+    padding-left: 3rem;
     height: auto;
     text-align: left;
     overflow: hidden;
@@ -1046,15 +1046,19 @@ body {
 
   .hero-content {
     width: 80vh;
-    height: 100vh;
+    height: 110vh;
     padding-top: 9rem;
     padding-bottom: 2rem;
     align-items: left;
     overflow: hidden;
+    display: flex;
+    text-align: left;
   }
-
+  .hero-btn {
+    font-size: 1.8rem;
+  }
   .hero-section h1 {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     width: 500px;
     text-align: left;
     padding-top: 0.6rem;
@@ -1063,21 +1067,23 @@ body {
     display: none;
   }
   .hero-section p {
-    width: 450px;
-    font-size: 1rem;
+    width: 480px;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 
   .hero-buttons {
     flex-direction: column;
     gap: 0.5rem;
-    text-align: left;
-    align-items: flex-start;
+    font-size: 1.5rem;
+    display: flex;
   }
 
   .hero-buttons .btn-first,
   .hero-buttons .btn-secondary {
     padding: 0.5rem 12rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    display: flex;
   }
 
   /*info section*/
@@ -1172,6 +1178,7 @@ body {
   .bmi-container {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   .bmi-container p {
     padding-right: 2rem;
@@ -1184,9 +1191,7 @@ body {
   }
   .bmi-image .triangle {
     position: absolute;
-    margin: 0 0 0 2rem;
-    position: fixed;
-    
+    margin: 0;
   }
 
   /*our-best-trainers section*/
