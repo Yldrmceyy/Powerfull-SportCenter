@@ -53,6 +53,12 @@ body {
   width: 250px;
   margin-left: 5rem;
 }
+.navbar .hamburger-menu {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
 
 .nav-links {
   list-style: none;
@@ -73,7 +79,7 @@ body {
 }
 
 .nav-links a.active {
-  color: var(--color-yellow); /* Tıklanınca değişecek renk */
+  color: var(--color-yellow); 
 }
 
 .nav-links a:hover {
@@ -94,7 +100,7 @@ body {
 
 /************************hero-section***********************/
 .hero-section {
-  height: 90vh;
+  height: 110vh;
   background: url("/Images/hero-man.jpg") no-repeat center center/cover;
   color: var(--color-white);
   display: flex;
@@ -692,8 +698,8 @@ body {
   transform: translateY(-5px);
 }
 
-/* Review Client section*/
 
+/* Review Client section*/
 .container-review-client {
   text-align: center;
   background-color: var(--color-light-blue);
@@ -984,10 +990,47 @@ body {
 
 /*responsive design (mobil- 576px)*/
 @media (max-width: 576px) {
- 
-  .navbar {
-    display: none;
+  .container {
+    justify-content: flex-start; /* Logoyu sola kaydırmak için */
   }
+
+  .hamburger-menu {
+    display: block;
+    margin-left: auto; /* Hamburger menüyü sağa kaydırmak için */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color-blue);
+    position: absolute;
+    top: 60px; /* Navbar yüksekliğine göre ayarlayın */
+    right: 0;
+    transition: transform 0.3s ease-in-out; /* Açılırken düzgün animasyon için */
+    transform: translateX(100%);
+  }
+
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .join-btn {
+    margin: 1em auto;
+  }
+
+.brand-logo img {
+  padding-bottom: 3px;
+  width: 250px; /* Logo boyutunu küçültmek için */
+  margin-left: 1rem; /* Mobilde sola hizalamak için */
+}
+
+
 
   /*Hero section*/
   .hero-section {
@@ -997,7 +1040,9 @@ body {
   }
 
   .hero-content {
-    padding-top: 4rem;
+    width: 80vh;
+    height: 120vh;
+    padding-top: 8rem;
     padding-bottom: 2rem;
     align-items: left;
     overflow-x: hidden;
