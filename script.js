@@ -23,18 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Determine which content to show
       const targetId = this.getAttribute("data-target");
-      
+
       // Hide all content sections
       document.querySelectorAll(".content").forEach((content) => {
         content.style.display = "none";
       });
-      
+
       // Show the targeted content section
       document.getElementById(targetId).style.display = "flex";
     });
   });
 });
-
 
 // BMI Calculator
 
@@ -57,19 +56,28 @@ function calculateBMI() {
   // Displaying Result
   if (bmi < 18.5) {
     result.textContent = bmi + "-> Underweight";
-    triangle.style.left = "10%";
+    const range1 = 6 + ((bmi- 13.5) * 3.2);
+    triangle.style.left = `${range1}%`;
+
   } else if (bmi >= 18.5 && bmi < 24.9) {
     result.textContent = bmi + "-> Normal";
-    triangle.style.left = "30%";
+    const range2 = 22 + ((bmi - 18.5) * 2.3);
+    triangle.style.left = `${range2}%`;
+
   } else if (bmi >= 25 && bmi < 29.9) {
     result.textContent = bmi + "-> Overweight";
-    triangle.style.left = "50%";
+    const range3 = 38 + ((bmi - 25) * 2.4);;
+    triangle.style.left = `${range3}%`;
+
   } else if (bmi >= 30 && bmi < 39.9) {
     result.textContent = bmi + "-> Obese";
-    triangle.style.left = "70%";
+    const range4 = 54 + (bmi - 30) * 2.9;
+    triangle.style.left = `${range4}%`;
+
   } else {
     result.textContent = bmi + "->Extremely Obese";
-     triangle.style.left = "90%";
+    const range5 = 70 + (bmi - 35) * 3.1;
+    triangle.style.left = `${range5}%`;
   }
 }
 
@@ -77,9 +85,8 @@ function calculateBMI() {
 document.querySelector("#height").addEventListener("keyup", calculateBMI);
 document.querySelector("#weight").addEventListener("keyup", calculateBMI);
 
-
 //Hamburger Menu
 function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('show');
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("show");
 }
