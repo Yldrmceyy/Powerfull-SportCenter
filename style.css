@@ -1025,16 +1025,16 @@ body {
   }
 
 .brand-logo img {
-  padding-bottom: 3px;
-  width: 250px; /* Logo boyutunu küçültmek için */
-  margin-left: 1rem; /* Mobilde sola hizalamak için */
+  width: 250px; 
+  margin-left: 1rem; 
 }
 
 
 
   /*Hero section*/
   .hero-section {
-    padding: 0 1rem;
+    padding-left: 0;
+   
     height: auto;
     text-align: left;
   }
@@ -1042,20 +1042,24 @@ body {
   .hero-content {
     width: 80vh;
     height: 120vh;
-    padding-top: 8rem;
+    padding-top: 9rem;
     padding-bottom: 2rem;
     align-items: left;
     overflow-x: hidden;
+
   }
 
   .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
+    width: 500px;
     text-align: left;
     padding-top: 0.6rem;
   }
-
+  .mobile-hide {
+    display: none; 
+}
   .hero-section p {
-    width: 400px;
+    width: 450px;
     font-size: 1rem;
   }
 
@@ -1070,12 +1074,15 @@ body {
   .hero-buttons .btn-secondary {
     padding: 0.5rem 12rem;
     font-size: 1rem;
-  }
 
+
+    
+  }
+ 
   /*info section*/
   .info-section {
     flex-direction: column;
-    padding: 0 15%;
+    padding: 5% 15%;
   }
 
   .info-section .box {
