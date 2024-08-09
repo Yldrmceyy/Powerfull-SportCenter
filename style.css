@@ -1211,7 +1211,9 @@ body {
   }
   .bmi-image .triangle {
     position: absolute;
-    margin: 0;
+    margin-left:2rem;
+  
+    
   }
 
   /*our-best-trainers section*/
