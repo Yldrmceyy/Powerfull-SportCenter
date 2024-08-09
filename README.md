@@ -2,16 +2,15 @@
 
 This repository contains the source code for the Powerful Gym website. The website is designed to provide information about gym classes, trainers, and equipment available for purchase. It also includes a BMI calculator and a contact form with an embedded Google Map.
 
-## Table of Contents
-- [Features](#features)
-- [Technologies](#technologies)
-- [Installation](#installation)
+ You can view the live Powerfull Sport Center website project [here](https://powerfull-sport-center.netlify.app/).
 
  ## Desktop View
 ![Desktop View](/Desktop.gif) 
 
  ## Mobile View
  ![Mobile View](./Mobile.gif)
+
+
 
 
 ## Features
