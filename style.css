@@ -1005,8 +1005,8 @@ body {
   }
 
   .brand-logo img {
-    width: 250px; 
-    margin-left: 1.8rem; 
+    width: 250px;
+    margin-left: 1.8rem;
   }
 
   .nav-links {
@@ -1016,7 +1016,7 @@ body {
     background-color: var(--color-blue);
     position: absolute;
     top: 5rem;
-    left: 0; 
+    left: 0;
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%);
   }
@@ -1041,61 +1041,59 @@ body {
 
   /* Hero section */
   .hero-section {
-    padding-left: 2rem; 
-    height: 120vh; 
+    padding-left: 2rem;
+    height: 120vh;
     text-align: left;
     overflow: hidden;
   }
 
   .hero-content {
-    width: 100%; 
-    height: auto; 
-    padding-top: 6rem; 
+    width: 100%;
+    height: auto;
+    padding-top: 6rem;
     padding-bottom: 2rem;
-    align-items: flex-start; 
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     text-align: left;
   }
 
   .hero-btn {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
   }
 
   .hero-section h1 {
-    font-size: 3.5rem; 
-    width: auto; 
-    
+    font-size: 3.5rem;
+    width: auto;
+
     text-align: left;
     padding-top: 0.6rem;
-    line-height: 1.2; 
+    line-height: 1.2;
   }
 
   .mobile-hide {
-    display:none;
+    display: none;
   }
 
   .hero-section p {
-    width: 90%; 
-    font-size: 1.2rem; 
-    line-height: 1.8rem; 
-    margin-bottom: 1rem; 
+    width: 90%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
   }
 
   .hero-buttons {
     flex-direction: column;
-    gap: 1rem; 
+    gap: 1rem;
     font-size: 1.2rem;
     display: flex;
-   
   }
 
   .hero-buttons .btn-first,
   .hero-buttons .btn-secondary {
-    padding: 0.5rem 12rem; 
-    font-size: 1.2rem; 
-    text-align:left; 
-  
+    padding: 0.5rem 12rem;
+    font-size: 1.2rem;
+    text-align: left;
   }
 
   /*info section*/
@@ -1124,7 +1122,9 @@ body {
     font-size: 0.9rem;
     margin: 20px auto 0 auto;
     padding: 0 10px;
-    max-width: 100%;
+    
+      width:70%;
+    
   }
 
   /* Button layout changes */
@@ -1144,7 +1144,6 @@ body {
     text-align: center;
   }
 
-  /* Content layout changes */
   .content {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -1163,10 +1162,11 @@ body {
 
   .text-section .p-info {
     padding-right: 0;
-    padding: 0 10px;
+    padding: 0 3rem;
     font-size: 0.9rem;
     word-break: normal;
     line-height: 1.3rem;
+  
   }
 
   .text-section .p-date {
@@ -1193,8 +1193,6 @@ body {
     position: relative;
     padding-top: 4rem;
     align-items: center;
-   
-
   }
   .bmi-container h2 {
     text-align: center;
@@ -1204,11 +1202,9 @@ body {
     text-align: left;
     word-break: break-all;
   }
-  .bmi-text form{
-   
+  .bmi-text form {
     flex-direction: column;
     padding: 0 2rem;
-
   }
   .bmi-image {
     width: 100%;
@@ -1224,6 +1220,9 @@ body {
   .best-trainer-cards {
     flex-direction: column;
   }
+  .our-best-trainers p {
+    width: 70%;
+  }
 
   /* Purshase from us section*/
   .card-container {
@@ -1232,7 +1231,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
-
+  .purchase-from-us p {
+    width: 70%;
+  }
   .card {
     width: 90%;
     margin-top: 2rem;
@@ -1244,6 +1245,11 @@ body {
     padding: 10px 112.3px;
   }
 
+  /*Reviev Client*/
+  .review-client p {
+    width: 70%;
+  }
+
   /**Contact-us section*/
   .container-wrap {
     display: flex;
@@ -1251,7 +1257,13 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+  .contact-us p {
+    margin-bottom: 1rem;
+    width: 60%;
+  }
+  .contact-info {
+    justify-content: space-around;
+  }
   .footer-links {
     justify-content: space-between;
   }
@@ -1376,7 +1388,7 @@ body {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .container-contact-us .container-left,
   .container-contact-us .container-right {
     width: 100%;
