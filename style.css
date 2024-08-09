@@ -1259,10 +1259,11 @@ body {
   }
   .contact-us p {
     margin-bottom: 1rem;
-    width: 60%;
+    width: 65%;
   }
   .contact-info {
-    justify-content: space-around;
+    margin-left: 0.4rem;
+   gap: 9rem;
   }
   .footer-links {
     justify-content: space-between;
