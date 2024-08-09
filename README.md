@@ -7,6 +7,12 @@ This repository contains the source code for the Powerful Gym website. The websi
 - [Technologies](#technologies)
 - [Installation](#installation)
 
+ ## Desktop View
+![Desktop View](/Desktop.gif) 
+
+ ## Mobile View
+ ![Mobile View](./Mobile.gif)
+
 
 ## Features
 - **Responsive Navbar**: Always visible with a background color of `#355592` while scrolling.
